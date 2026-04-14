@@ -1,5 +1,3 @@
-# training/train_custom.py
-
 import os
 import csv
 import torch
