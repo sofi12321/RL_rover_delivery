@@ -1,0 +1,37 @@
+device: auto
+environment:
+  dt: 0.1
+  field_size:
+  - 20
+  - 20
+  goal_position: random
+  goal_radius: 1.5
+  init_position: random
+  max_obstacles: 4
+  max_speed: 1.0
+  max_steer: 0.5
+  max_steps: 1000
+  min_obstacles: 2
+  obstacle_radius_range:
+  - 1
+  - 2
+  reward_weights:
+    collision: 100.0
+    goal: 500.0
+    progress: 1.0
+    speed: 0.01
+    steer: 0.1
+    time: 0.1
+  robot_radius: 0.5
+  sensor_range: 5.0
+training:
+  alpha: auto
+  batch_size: 256
+  buffer_size: 1000000
+  eval_episodes: 20
+  eval_freq: 10000
+  gamma: 0.99
+  lr: 0.0003
+  target_entropy: auto
+  tau: 0.005
+  total_timesteps: 1000000
