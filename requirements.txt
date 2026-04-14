@@ -1,0 +1,21 @@
+gymnasium==1.2.3
+matplotlib==3.10.0
+matplotlib-inline==0.2.1
+matplotlib-venn==1.1.2
+numpy==2.0.2
+pandas==2.2.2
+PyYAML==6.0.3
+torch @ https://download.pytorch.org/whl/cpu/torch-2.10.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl
+torchao==0.10.0
+torchaudio @ https://download.pytorch.org/whl/cpu/torchaudio-2.10.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl
+torchcodec @ https://download.pytorch.org/whl/cpu/torchcodec-0.10.0-cp312-cp312-manylinux_2_28_x86_64.whl
+torchdata==0.11.0
+torchsummary==1.5.1
+torchtune==0.6.1
+torchvision @ https://download.pytorch.org/whl/cpu/torchvision-0.25.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl
+stable_baselines3==2.8.0
+tqdm==4.67.3
+pytest==8.4.2
+ImageIO==2.37.3
+imageio-ffmpeg==0.6.0
+ffmpeg==1.4
