@@ -1,5 +1,3 @@
-# env/rover_env.py
-
 import math
 import gymnasium as gym
 from gymnasium import spaces
