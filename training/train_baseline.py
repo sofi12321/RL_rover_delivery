@@ -1,5 +1,3 @@
-# training/train_baseline.py
-
 import os
 import csv
 from typing import Optional
