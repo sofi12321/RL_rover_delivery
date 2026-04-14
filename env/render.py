@@ -1,5 +1,3 @@
-# env/render.py
-
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from matplotlib.lines import Line2D
