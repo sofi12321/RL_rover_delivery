@@ -17,19 +17,6 @@ def deep_merge(base: Dict[str, Any], update: Dict[str, Any]) -> Dict[str, Any]:
 
 
 class Config:
-    """
-    Configuration class that provides attribute-style access to nested dictionaries.
-
-    Example:
-        >>> config = Config({'training': {'batch_size': 256}})
-        >>> config.training.batch_size
-        256
-        >>> config.training.batch_size = 512
-        >>> config.training.batch_size
-        512
-        >>> config.save('config.yaml')
-        >>> config.load('config.yaml')
-    """
 
     def __init__(self, data: Optional[Union[str, Dict[str, Any]]] = None):
         """
@@ -173,11 +160,5 @@ class _ConfigProxy:
 def load_config(config_path: Optional[str] = None) -> Config:
     """
     Load configuration from a YAML file or return default configuration.
-
-    Args:
-        config_path: Optional path to a YAML configuration file.
-
-    Returns:
-        Config object.
     """
     return Config(config_path)
