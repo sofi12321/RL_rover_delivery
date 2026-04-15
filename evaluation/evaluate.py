@@ -1,6 +1,8 @@
 import numpy as np
 from typing import Dict, List, Optional, Any, Union
 
+from env.rover_env import RoversEnv
+
 def evaluate_agent(
     env: RoversEnv,
     agent: Any,
