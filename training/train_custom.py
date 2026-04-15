@@ -8,7 +8,7 @@ from env.rover_env import RoversEnv
 from sac_custom.agent import SACAgent
 from utils.config import Config
 from utils.replay_buffer import ReplayBuffer
-from evaluation.evaluate import evaluate_agent  # будет реализовано позже
+from evaluation.evaluate import evaluate_agent 
 
 
 def train_custom(
