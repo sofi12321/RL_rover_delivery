@@ -1,5 +1,3 @@
-# baseline/baseline_agent.py
-
 import numpy as np
 import gymnasium as gym
 from typing import Union
