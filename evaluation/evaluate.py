@@ -2,7 +2,7 @@ import numpy as np
 from typing import Dict, List, Optional, Any, Union
 
 from env.rover_env import RoversEnv
-from utils.helpers import maybe_render  # предположим, есть такая утилита, но можно и без
+from utils.helpers import maybe_render 
 
 
 def evaluate_agent(
