@@ -1,9 +1,6 @@
 import numpy as np
 from typing import Dict, List, Optional, Any, Union
 
-from env.rover_env import RoversEnv
-
-
 def evaluate_agent(
     env: RoversEnv,
     agent: Any,
@@ -44,10 +41,6 @@ def evaluate_agent(
         else:
             env.reset()
 
-        obs = env._get_obs()  # после reset наблюдение уже есть, но можно использовать return
-        # На самом деле reset возвращает obs, info. Так что лучше:
-        # obs, info = env.reset(seed=seed+ep if seed else None)
-        # Но в нашей среде reset возвращает obs, info, поэтому используем так:
         obs, info = env.reset(seed=seed + ep if seed is not None else None)
 
         done = False
@@ -62,8 +55,6 @@ def evaluate_agent(
             ep_length += 1
 
             if render:
-                # Предположим, у нас есть функция render из env/render.py
-                from env.render import render_env
                 render_env(env, title=f"Episode {ep+1}, Step {ep_length}")
 
         episode_rewards.append(ep_reward)
